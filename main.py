@@ -1,7 +1,7 @@
 import streamlit as st
 from pydantic_agent.agent import ScriptAgent, AgentOutput
 
-st.set_page_config(page_title="Mood Script", page_icon="🎙️", layout="wide")
+st.set_page_config(page_title="Mood Script - Community", page_icon="🎙️", layout="wide")
 
 st.title("🎙️ Mood Script")
 
