@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    container_name: mood_script_container
+    image: jean-lucas/mood_script_app:1.0
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env        # carrega GOOGLE_API_KEY e outras variáveis sem embalá-las na imagem
+    volumes:
+      - .:/app      # monta o código local no container (hot-reload / desenvolvimento)
+    environment:
+      - PYTHONUNBUFFERED=1

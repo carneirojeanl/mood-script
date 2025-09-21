@@ -1,0 +1,11 @@
+# arquivos e pastas que não queremos enviar para a imagem
+.venv
+__pycache__
+*.pyc
+*.pyo
+.Python
+.env
+.git
+.gitignore
+.DS_Store
+node_modules
